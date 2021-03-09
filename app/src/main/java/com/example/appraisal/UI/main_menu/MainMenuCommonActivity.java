@@ -20,15 +20,26 @@ public class MainMenuCommonActivity extends AppCompatActivity implements BottomN
         int id = item.getItemId();
 
         if (id == R.id.home_button){
-            return true;
+            if (this.getClass() == ExpSubscriptionActivity.class)
+                return false;
+            Intent intent = new Intent(this, ExpSubscriptionActivity.class);
+            startActivity(intent);
         }
         else if (id == R.id.search_button){
             return true;
         }
         else if (id == R.id.forum_button){
+            if (this.getClass() == ForumHomeActivity.class)
+                return false;
+            Intent intent = new Intent(this, ForumHomeActivity.class);
+            startActivity(intent);
             return true;
         }
         else if (id == R.id.list_button){
+            if (this.getClass() == MyExperimentActivity.class)
+                return false;
+            Intent intent = new Intent(this, MyExperimentActivity.class);
+            startActivity(intent);
             return true;
         }
         else if (id == R.id.profile_button){
