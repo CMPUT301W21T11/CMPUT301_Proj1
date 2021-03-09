@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home_button"
+        android:enabled="true"
+        android:icon="@drawable/home"
+        android:onClick="toHome"
+        android:title="Home"/>
+    <item
+        android:id="@+id/search_button"
+        android:enabled="true"
+        android:icon="@drawable/search"
+        android:onClick="toSearch"
+        android:title="Search"/>
+
+    <item
+        android:id="@+id/forum_button"
+        android:enabled="true"
+        android:icon="@drawable/forum"
+        android:onClick="toForum"
+        android:title="Forum" />
+
+    <item
+        android:id="@+id/list_button"
+        android:enabled="true"
+        android:onClick="toList"
+        android:icon="@drawable/list"
+        android:title="List"/>
+
+    <item
+        android:id="@+id/profile_button"
+        android:enabled="true"
+        android:onClick="toProfile"
+        android:icon="@drawable/profile"
+        android:title="Profile"/>
+
+</menu>

@@ -1,12 +1,42 @@
 package com.example.appraisal.UI.main_menu;
 
 import android.content.Intent;
+import android.view.MenuItem;
 import android.view.View;
+
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.appraisal.R;
 import com.example.appraisal.UI.main_menu.forum.ForumHomeActivity;
 import com.example.appraisal.UI.main_menu.subscription.ExpSubscriptionActivity;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class MainMenuCommonActivity extends AppCompatActivity {
+public class MainMenuCommonActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener {
+
+
+    @Override
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        int id = item.getItemId();
+
+        if (id == R.id.home_button){
+            return true;
+        }
+        else if (id == R.id.search_button){
+            return true;
+        }
+        else if (id == R.id.forum_button){
+            return true;
+        }
+        else if (id == R.id.list_button){
+            return true;
+        }
+        else if (id == R.id.profile_button){
+            return true;
+        }
+        return false;
+    }
+
     public void toHome(View v) {
         if (this.getClass() == ExpSubscriptionActivity.class)
             return;

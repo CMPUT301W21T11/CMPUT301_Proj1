@@ -24,42 +24,49 @@
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent">
 
-        <Button
-                android:id="@+id/home_button"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="home" android:onClick="toHome"/>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/bottom_navigation_menu"
+        app:labelVisibilityMode="labeled"/>
 
-        <Button
-                android:id="@+id/search_button"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="search" android:onClick="toSearch"/>
+<!--        <Button-->
+<!--                android:id="@+id/home_button"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="home" android:onClick="toHome"/>-->
 
-        <Button
-            android:id="@+id/forum_button"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:onClick="toForum"
-            android:text="forum" />
+<!--        <Button-->
+<!--                android:id="@+id/search_button"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="search" android:onClick="toSearch"/>-->
 
-        <Button
-            android:id="@+id/my_exp_button"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:onClick="toMyExps"
-            android:text="list" />
+<!--        <Button-->
+<!--            android:id="@+id/forum_button"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="1"-->
+<!--            android:onClick="toForum"-->
+<!--            android:text="forum" />-->
 
-        <Button
-                android:id="@+id/profile_button"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="profile" android:onClick="toProfile"/>
+<!--        <Button-->
+<!--            android:id="@+id/my_exp_button"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="1"-->
+<!--            android:onClick="toMyExps"-->
+<!--            android:text="list" />-->
+
+<!--        <Button-->
+<!--                android:id="@+id/profile_button"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="profile" android:onClick="toProfile"/>-->
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
