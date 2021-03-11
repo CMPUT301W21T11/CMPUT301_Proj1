@@ -56,6 +56,7 @@ public class Experiment {
     public Boolean getIs_published() {
         return is_published;
     }
+
     public void setIs_published(Boolean is_published) {
         this.is_published = is_published;
     }
